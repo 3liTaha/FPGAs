@@ -3,6 +3,14 @@ Amazon EC2 F1 instances are available today in three different sizes that includ
 
 Guiding Ideas:
 Matrix Vector Multiplication should be performed in a row wise fashion:
-  - Scaling by each entry then adding is: 1000 Multiplications Followed by 999 Addditions. 
-  - Dot Product: 1000 Multiplications In Parallel. (Approx half the work)
+  - Scaling by each entry then adding is: 1000 Multiplications and an Accumulator (Smart way) approx 1000 Cycles (2000 DSP Slices in Series one for accumulator, one for multiplication). 
+  - Dot Product: 1000 Multiplications In Parallel. Followed by 10 cycles for addition (bad way) (Requires memory)
+  - JIT Memory Loading: Vector for next multiplication loaded as next multiplication starts ( during first round, stays there after).
   - Use DSP to parallelize.
+
+Workflow for Development Software Defined Acceleration:
+  1. Implement Design Using Vitis
+  2. Emulate Using Software Emulation For Correctness
+  3. Emulate Using Software Emulation For Profiling
+  4. Generate Binaries
+  5. Run on FPGA.
