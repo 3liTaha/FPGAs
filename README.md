@@ -14,3 +14,12 @@ Workflow for Development Software Defined Acceleration:
   3. Emulate Using Software Emulation For Profiling
   4. Generate Binaries
   5. Run on FPGA.
+
+Tools to Use:
+  - Vitis CLI
+  - Vitis Analyzer
+
+Current plan:
+  1. Accelerate Dot Product to take one clock cycle with critical path starting at memory going through DSPs and ending in memory.
+  2. Measure performance doing each dot product on FPGA
+  3. Adjust design to reduce memory transfers in FPGA
