@@ -27,3 +27,4 @@ Current plan:
 Good Resources/ Introductory Material For Vitis and the development Environment For Acceleration:
   1. https://github.com/Xilinx/Vitis-Tutorials/tree/2021.2/Getting_Started/Vitis
   2. https://docs.xilinx.com/v/u/2019.2-English/ug1393-vitis-application-acceleration: Read First four chapters Save a lot of time.
+  3. https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Platform: Good to get started programming after understanding basic example
