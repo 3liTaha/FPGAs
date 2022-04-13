@@ -30,3 +30,8 @@ Good Resources/ Introductory Material For Vitis and the development Environment 
   3. https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Platform: Good to get started programming after understanding basic example
 
 Estimation of Performance Using GMM:
+
+
+Strategy:
+BLAS library implements use of DSP's for multiplication, alter code to stream data to FPGA once and stream data back after eery iteration by storing data in a buffer.
+
