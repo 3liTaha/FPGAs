@@ -24,6 +24,7 @@ Current plan:
   2. Measure performance doing each dot product on FPGA
   3. Adjust design to reduce memory transfers in FPGA
 
+Libraries can be imported by copying folders directly
 Good Resources/ Introductory Material For Vitis and the development Environment For Acceleration:
   1. https://github.com/Xilinx/Vitis-Tutorials/tree/2021.2/Getting_Started/Vitis
   2. https://docs.xilinx.com/v/u/2019.2-English/ug1393-vitis-application-acceleration: Read First four chapters Save a lot of time.
